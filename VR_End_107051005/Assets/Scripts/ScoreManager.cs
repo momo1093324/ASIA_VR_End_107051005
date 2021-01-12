@@ -24,17 +24,17 @@ public class ScoreManager : MonoBehaviour
     //OTE條件
     private void OnTriggerEnter(Collider other)
     {
-        //如果 碰撞物件標籤為薑餅人就加分
-        //而且(&&) 薑餅人的高度>1.5  分數才不會出bug
-        if (other.tag == "薑餅人" && other.transform.position.y > 1.5f) ;
+        //如果 碰撞物件標籤為薑餅人cookie就加分
+        //而且(&&) 薑餅人的高度>1.5  
+        if (other.tag == "cookie" && other.transform.position.y > 1.5f)
         {
             AddScore();
         }
-        //如果 碰撞物件名稱為Player，會顯示玩家進入
+        //碰撞物件名稱為Player，會顯示玩家進入
         if (other.transform.root.name == "Player")
         {
-            //玩家進入二分區域，將投進分數改為二分
-            print("玩家進入");
+            //玩家進入三分區域，將投進分數改為三分
+            scoreIn = 3;
         }
     }
     //當碰撞物件離開碰撞範圍時執行一次

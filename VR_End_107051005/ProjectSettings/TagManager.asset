@@ -8,6 +8,8 @@ TagManager:
   - FxTemporaire
   - "\u79AE\u7269"
   - "\u8591\u9905\u4EBA"
+  - cookie
+  - box
   layers:
   - Default
   - TransparentFX
